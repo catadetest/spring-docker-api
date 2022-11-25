@@ -7,7 +7,7 @@ import java.util.*;
 
 @Service
 public class ExchangeRatesService {
-    final String[] supportedCurrencies = {"EUR", "GBP", "NGN", "USD", "YEN"};
+    final String[] supportedCurrencies = {"EUR", "GBP", "NGN", "USD", "YEN", "CFA"};
 
     public List<Map<String, Rate[]>> getExchangeRates() throws Exception {
         List<Map<String, Rate[]>> rates = new ArrayList<>();

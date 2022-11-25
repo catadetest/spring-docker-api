@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class ExchangeRatesApplicationTests {
 
-    final String[] expectedCurrencies = {"EUR", "GBP", "NGN", "USD", "YEN"};
+    final String[] expectedCurrencies = {"EUR", "GBP", "NGN", "USD", "YEN", "CFA"};
     @Autowired
     private MockMvc mvc;
     @Autowired
