@@ -20,6 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class ExchangeRatesApplicationTests {
 
     final String[] expectedCurrencies = {"EUR", "GBP", "NGN", "USD", "YEN", "CFA"};
+    
     @Autowired
     private MockMvc mvc;
     @Autowired
