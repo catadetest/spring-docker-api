@@ -43,7 +43,7 @@ class ExchangeRatesApplicationTests {
 
     @Test
     public void assert_supported_currencies_are_returned_for_currency_index_route() throws Exception {
-        String[] expectedCurrencies = {"EUR", "GBP", "NGN", "USD", "YEN"};
+        String[] expectedCurrencies = {"EUR", "GBP", "NGN", "USD", "YEN", "CFA"};
 
         MvcResult mvcResult = mvc.perform(get("/currency"))
                 .andExpect(status().isOk()).andReturn();
