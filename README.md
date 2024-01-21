@@ -11,8 +11,6 @@ You can clone the project using: `git clone https://github.com/catadetest/spring
 
 Build the project using linux environment:
 ```bash
-#!/bin/bash
-
-echo "Hello, GitHub!"
-echo "This is a multiline code snippet."
-ls -l
+cd spring-docker-api
+mvn -B -DskipTests clean package
+mvn spring-boot:run
