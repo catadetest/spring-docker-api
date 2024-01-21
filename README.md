@@ -20,7 +20,7 @@ The `mvn -B -DskipTests clean package` command will clear the `target` directory
 By default, your application will be served to port 8080. Navigate to `http://127.0.0.1:8080/rates` in order to review the JSON response.
 
 
-**Dockerizing the project**
+###Dockerizing the project
 
 In the root of the project, create a new file named `Dockerfile`
 Add the following to the newly created `Dockerfile`
