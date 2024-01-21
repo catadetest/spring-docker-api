@@ -24,9 +24,7 @@ By default, your application will be served to port 8080. Navigate to `http://12
 
 In the root of the project, create a new file named `Dockerfile`
 Add the following to the newly created `Dockerfile`
-<pre>
-```
-# Dockerfile
+```bash
 FROM openjdk:18
 
 WORKDIR /app
@@ -38,5 +36,3 @@ EXPOSE 8080
 
 CMD ["java", "-jar", "target/exchangeRates-0.0.1-SNAPSHOT.jar"]
 ```
-</pre>
-
