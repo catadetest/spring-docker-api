@@ -19,5 +19,22 @@ The `mvn -B -DskipTests clean package` command will clear the `target` directory
 
 By default, your application will be served to port 8080. Navigate to `http://127.0.0.1:8080/rates` in order to review the JSON response.
 
+**Dockerizing the project**
+In the root of the project, create a new file named `Dockerfile`
+Add the following to the newly created `Dockerfile`
+<pre>
+```docker
+# Dockerfile
+FROM openjdk:18
 
+WORKDIR /app
+COPY . /app
+
+RUN ./mvnw  -B -DskipTests clean package
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "target/exchangeRates-0.0.1-SNAPSHOT.jar"]
+```
+</pre>
 
