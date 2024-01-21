@@ -16,10 +16,4 @@ public class CurrencyController {
     public String[] getSupportedCurrencies() {
         return ratesService.getSupportedCurrencies();
     }
-
-    @GetMapping("/hello")
-    public String sayHello() {
-        System.out.println("Hello World");
-        return "Hello World";
-    }
 }
