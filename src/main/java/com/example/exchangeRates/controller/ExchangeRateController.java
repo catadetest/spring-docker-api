@@ -23,6 +23,9 @@ public class ExchangeRateController {
     @GetMapping(value = "")
     public List<Map<String, Rate[]>> getExchangeRates(HttpServletResponse response) {
         try {
+            // Print "Hello World" to the console
+            System.out.println("Hello World");
+
             return ratesService.getExchangeRates();
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage(), e);
@@ -32,6 +35,9 @@ public class ExchangeRateController {
     @GetMapping(value = "/{currency}")
     public Map<String, Rate[]> getExchangeRatesForCurrency(@PathVariable("currency") String currency, HttpServletResponse response) {
         try {
+            // Print "Hello World" to the console
+            System.out.println("Hello World");
+
             return ratesService.getExchangeRatesForCurrency(currency);
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage(), e);
