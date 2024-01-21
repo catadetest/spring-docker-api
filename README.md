@@ -7,4 +7,4 @@ This project is an exchange rate API with three endpoints namely:
 | 3 | /rates/{currency} | GET | Get the exchange rates for a single currency |
 
 
-You can clone the project using: git clone https://github.com/catadetest/spring-docker-api.git
+You can clone the project using: `git clone https://github.com/catadetest/spring-docker-api.git`
