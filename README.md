@@ -14,3 +14,6 @@ Build the project using linux environment:
 cd spring-docker-api
 mvn -B -DskipTests clean package
 mvn spring-boot:run
+
+
+Test
