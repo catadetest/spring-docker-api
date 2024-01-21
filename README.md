@@ -8,3 +8,11 @@ This project is an exchange rate API with three endpoints namely:
 
 
 You can clone the project using: `git clone https://github.com/catadetest/spring-docker-api.git`
+
+Build the project using linux environment:
+```bash
+#!/bin/bash
+
+echo "Hello, GitHub!"
+echo "This is a multiline code snippet."
+ls -l
