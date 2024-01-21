@@ -14,7 +14,7 @@ public class CurrencyController {
 
     @GetMapping(value = "")
     public String[] getSupportedCurrencies() {
-        return ratesService.getSupportedCurrencies();
+        System.out.println("Hello World");
         return "Hello from Spring Boot!";
     }
 }
